@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.7.1.min.js"
+    ></script>
+
+    <title>Interactive rating component</title>
+  </head>
+  <body>
+    <main class="container">
+      <div class="rating-box">
+        <div class="svg-holder">
+          <img
+            src="./images/icon-star.svg"
+            alt="star-rating"
+            class="star-img"
+          />
+        </div>
+        <h1 class="header">How did we do?</h1>
+        <p class="header-description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <!-- Rating state start -->
+        <div class="rating">
+          <button id="addRating" value="1" class="rtn-btn">1</button>
+          <button id="addRating" value="2" class="rtn-btn">2</button>
+          <button id="addRating" value="3" class="rtn-btn">3</button>
+          <button id="addRating" value="4" class="rtn-btn">4</button>
+          <button id="addRating" value="5" class="rtn-btn">5</button>
+        </div>
+        <button class="btn-submit" id="submit">SUBMIT</button>
+        <!-- Rating state end -->
+      </div>
+
+      <div class="thank-you hidden">
+        <img
+          src="./images/illustration-thank-you.svg"
+          alt=""
+          class="thank-you-img"
+          width="175"
+          height="125"
+        />
+        <p class="thank-you-result">
+          You selected out
+          <span id="result"></span>
+          of 5
+        </p>
+        <h1 class="thank-you-header">Thank you!</h1>
+        <p class="thank-you-text">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+        <button class="rate_again" id="rate-again">RATE AGAIN</button>
+      </div>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
